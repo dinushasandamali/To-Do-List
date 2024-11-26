@@ -1,0 +1,74 @@
+/* General Styles */
+body {  
+  background-color: #f4f7f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Home Styles */
+.home {
+  width: 100%;
+  max-width: 600px;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.home h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+/* Todo List Styles */
+.home .todo-item {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  font-size: 18px;
+  text-align: left;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.home .todo-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.home .todo-item:last-child {
+  margin-bottom: 0;
+}
+
+/* Loading and No Record Styles */
+.loading, .no-record {
+  font-size: 18px;
+  color: #888;
+  margin-top: 30px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+  .home {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .create input, .create button {
+    width: 100%;
+  }
+
+  .home h2 {
+    font-size: 2rem;
+  }
+
+  .home .todo-item {
+    font-size: 16px;
+    padding: 12px;
+  }
+}

@@ -1,0 +1,132 @@
+/* General styling for the home container */
+.home {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+/* Page heading styling */
+.home h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 2px solid #ddd;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* Task container */
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Hover effect for tasks */
+.task:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Checkbox container */
+.checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* Task description */
+.checkbox p {
+    margin-left: 10px;
+    font-size: 1rem;
+    color: #555;
+    transition: color 0.3s;
+}
+
+/* Line-through for completed tasks */
+.line_through {
+    text-decoration: line-through;
+    color: #aaa;
+}
+
+/* Task icons */
+.icon {
+    font-size: 1.5rem;
+    color: #4caf50;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.icon:hover {
+    color: #388e3c;
+    transform: scale(1.2);
+}
+
+/* Trash icon color */
+.task span .icon {
+    color: #f44336;
+}
+
+.task span .icon:hover {
+    color: #d32f2f;
+}
+
+/* Loading message */
+.home p {
+    font-size: 1.2rem;
+    color: #999;
+    margin-top: 20px;
+}
+
+/* Create button or component styling */
+.create-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.create-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #2196f3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.create-button:hover {
+    background-color: #1976d2;
+    transform: scale(1.05);
+}
+
+/* Responsive design for mobile screens */
+@media (max-width: 768px) {
+    .home {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .task {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .checkbox {
+        margin-bottom: 10px;
+    }
+}
